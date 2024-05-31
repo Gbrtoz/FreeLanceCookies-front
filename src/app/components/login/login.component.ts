@@ -5,11 +5,12 @@ import { HttpClientModule } from '@angular/common/http';
 import { Router } from '@angular/router';
 
 @Component({
-  selector: 'app-login',
-  standalone: true,
-  imports: [FormsModule, HttpClientModule],
-  templateUrl: './login.component.html',
-  styleUrls: ['./login.component.css'] // Corrigi para styleUrls
+    selector: 'app-login',
+    standalone: true,
+    templateUrl: './login.component.html',
+    styleUrls: ['./login.component.css'] // Corrigi para styleUrls
+    ,
+    imports: [FormsModule, HttpClientModule]
 })
 export class LoginComponent {
   loginObj: Login;
