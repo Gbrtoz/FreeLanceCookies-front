@@ -1,14 +1,34 @@
+/* You can add global styles to this file, and also import other style files */
 html, body {
     height: 100%;
     width: 100%;
     margin: 0px;
-    font-size: 40px;
+    font-size: 20px;
+}
+
+@media (max-width: 800px) {
+    html, body {
+        font-size: 10px;
+    }
+
+    .action-buttons button {
+        font-size: 0.8em;
+    }
+
+    .action-buttons button.register-button {
+        margin-right: 2px;
+    }
 }
 
 header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+a, a:hover, a:visited, a:active {
+    text-decoration: none !important;
+    color: #000
 }
 
 .container {
@@ -19,17 +39,27 @@ header {
 
 .orange-rectangle {
     background-color: #FF7F39;
-    padding: 2.4% 3.6% 2.4% 3.6%;
+    padding: 0.4% 2.6% 0.4% 2.6%;
+}
+
+.login-icon a {
+    color: #FFF;
 }
 
 .saira-stencil-one-regular {
     font-family: "Saira Stencil One", sans-serif;
     font-weight: 400;
-    font-size: 0.5em;
     font-style: normal;
     margin: 0;
     color: #FFFFFF;
 }
+
+
+
+
+
+
+
 
 .action-buttons {
     display: flex;
@@ -39,9 +69,8 @@ header {
 
 button {
     border-radius: 24px;
-    padding: 8px 9px 8px 9px;
+    padding: 5px 6px 5px 6px;
     border: 1px solid #FFFFFF;
-    min-width: 80px;
 }
 
 .register-button {
@@ -52,76 +81,19 @@ button {
 
 .login-button {
     color: #FF7F39;
-    background-color: #FFFFFF;
-    padding: 8px 9px 8px 9px;
 }
 
 
 .below-navbar {
     background-color: #FF7F39;
     border-radius: 8px;
-    padding: 10px;
-    font-size: 0.5em;
-}
-
-.contrate-text {
+    padding: 15px;
     font-family: "Poppins";
     color: #FFFFFF;
     font-weight: 700;
 }
 
-.services-text {
-    font-size: 0.4em;
-    font-family: "Poppins";
-    font-weight: 700;
-}
-
-.freelance-card {
-    background-color: #FFF4EE;
-    padding: 12px;
-    border-radius: 8px;
-    max-height: 328px;
-    margin: 2% 0% 1% 0%;
-    display: flex;
-    flex-direction: row;
-    font-size: 20px;
-}
-
-.freelance-card img {
-    height: 90%;
-    max-width: 29%;
-}
-
-.freelance-description {
-    display: flex;
-    flex-direction: column;
-    margin-left: 2%;
-    width: 100%;
-    justify-content: space-between;
-}
-
-.freelance-data {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    padding-left: 3%;
-    padding-right: 3%;
-
-}
-
-.freelance-person {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    font-size: 0.7em;
-    margin-top: 10px;
-}
-
-
-.freelance-description p {
-    margin: 0px;
-}
-
-.freelance-value {
-    text-align: end;
+.below-navbar p {
+    margin-top: 0px;
+    font-size: 1.3em;
 }

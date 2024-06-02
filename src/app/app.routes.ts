@@ -22,7 +22,7 @@ export const routes: Routes = [
         component: CadastroComponent
     },
     {
-        path: 'oferta',
+        path: 'oferta/:freelanceId',
         component: OfertaComponent
     },
     {
